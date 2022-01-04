@@ -1,0 +1,27 @@
+{
+  "name": "vite-vue3-mff",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "vant": "^3.3.7",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2",
+    "weixin-js-sdk": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.6.4",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.3",
+    "autoprefixer": "^10.4.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass": "^1.45.1",
+    "vite": "^2.7.2",
+    "vite-plugin-style-import": "^1.4.1"
+  }
+}
