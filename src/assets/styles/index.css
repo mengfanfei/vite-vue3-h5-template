@@ -336,9 +336,9 @@ input::-webkit-input-placeholder {
 .m-link {
   text-decoration: underline;
 }
-.m-boxsize-bb {
+.m-boxs-bb {
   box-sizing: border-box;
 }
-.m-boxsize-cb {
+.m-boxs-cb {
   box-sizing: content-box;
 }
