@@ -27,3 +27,6 @@
 
 ## 运行项目
 `yarn dev`
+
+## 预览
+https://vite-vue3-h5-template-ten.vercel.app/#/
