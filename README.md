@@ -15,3 +15,15 @@
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+
+## 安装
+
+`git clone https://github.com/mengfanfei/vite-vue3-h5-template.git`
+
+## 下载依赖
+`yarn`
+或
+`yarn install`
+
+## 运行项目
+`yarn dev`
