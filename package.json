@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "pinia": "^2.0.9",
     "vant": "^3.3.7",
     "vue": "^3.2.25",
     "vue-router": "^4.0.12",
-    "vuex": "^4.0.2",
     "weixin-js-sdk": "^1.6.0"
   },
   "devDependencies": {

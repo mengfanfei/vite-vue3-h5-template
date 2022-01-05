@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { useStore } from '../store'
 
 defineProps({
   msg: String
@@ -7,6 +8,7 @@ defineProps({
 
 const count = ref(0)
 let str = ref(window.navigator.userAgent)
+const store = useStore()
 </script>
 
 <template>
@@ -33,6 +35,7 @@ let str = ref(window.navigator.userAgent)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <p class="m-flexd-colr">{{str}}</p>
+  <p>{{ store.counter }}</p>
 
 </template>
 
