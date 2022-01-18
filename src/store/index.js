@@ -8,6 +8,6 @@ export const useStore = defineStore('main', {
       name2: 'mff'
     }
   },
-  getters,
-  actions,
+  getters: {},
+  actions: {},
 })
