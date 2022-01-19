@@ -1,5 +1,5 @@
 // 安卓状态栏高度
-export function setStatusHeight(value) {
+export function setStatusHeight(value: string) {
   return localStorage.setItem('statusHeight', value)
 }
 
@@ -11,7 +11,7 @@ export function removeStatusHeight() {
   return localStorage.removeItem('statusHeight')
 }
 
-export function setOnlyTag(value) {
+export function setOnlyTag(value: string) {
   return localStorage.setItem('only_tag', value)
 }
 

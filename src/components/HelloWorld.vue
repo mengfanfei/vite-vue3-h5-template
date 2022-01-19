@@ -1,6 +1,6 @@
-<script setup>
-import { ref } from 'vue'
-import { useStore } from '../store'
+<script setup lang="ts">
+import {ref} from 'vue'
+import {useStore} from '@/store'
 
 defineProps({
   msg: String

@@ -1,9 +1,10 @@
 import axios from 'axios'
-import { getToken } from './auth'
-import { Toast } from 'vant'
-import app from './jsBridge'
-import { browser } from "./browser";
-import { getOnlyTag } from "./utils";
+import {getToken} from '@/utils/auth'
+import {Toast} from 'vant'
+import app from '@/utils/jsBridge'
+import {browser} from "@/utils/browser"
+import {getOnlyTag} from "@/utils/utils"
+// @ts-ignore
 import wx from 'weixin-js-sdk'
 
 const service = axios.create({
@@ -18,7 +19,7 @@ service.interceptors.request.use(config => {
     config['data'] = {}
   }
   if (getToken()) { // 增加token
-    config.headers['token'] = getToken() // app需要，写死
+    config.headers!.token = getToken() as string// app需要，写死
     config.data['token'] = getToken() // app需要，写死
   }
   if (getOnlyTag()) { // app需要，写死

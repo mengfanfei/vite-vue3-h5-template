@@ -5,10 +5,10 @@
   <MyCom></MyCom>
 </template>
 
-<script setup>
-import { computed, ref } from 'vue';
-import MyCom from '../../components/mycom';
-import { useStore } from '../../store'
+<script setup lang="ts">
+import {ref} from 'vue';
+import MyCom from '../../components/MyCom';
+import {useStore} from '@/store'
 
 const store = useStore()
 

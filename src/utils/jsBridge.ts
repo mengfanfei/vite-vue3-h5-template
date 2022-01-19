@@ -3,7 +3,7 @@ export default {
    * @function 打开新的页面
    * @param path 要跳转的路径
    */
-  goPage: function (path) {
+  goPage: function (path: string) {
     location.href = "jsCallBack://?type=push&path=" + path;
   },
   /**
@@ -46,7 +46,7 @@ export default {
    * @function 打电话
    * @param phone 电话
    */
-  tel: function(phone) {
+  tel: function(phone: string) {
     location.href = "jsCallBack://?type=tel&phone=" + phone;
   },
   /**
@@ -56,7 +56,7 @@ export default {
    * @param logoUrl 分享的图片链接
    * @param shareUrl 分享的跳转链接
    */
-  share: function (title, desc, logoUrl, shareUrl) {
+  share: function (title: string, desc: string, logoUrl: string, shareUrl: string) {
     location.href = "jsCallBack://?type=share&title=" + title + "&desc=" + desc + "&logo=" + logoUrl + "&shareUrl=" + shareUrl;
   },
   /**
@@ -64,7 +64,7 @@ export default {
    * @param name app的页面   message:消息，share:分享，realName:实名认证，setPayPwd:设置交易密码，changePayPwd:修改交易密码，invoice:发票管理
    * @param push
    */
-  openPage: function (name, push) {
+  openPage: function (name: string, push: string) {
     location.href = "jsCallBack://?type=redirect&name=" + name + "&push=" + push;
   },
   /**
@@ -72,14 +72,14 @@ export default {
    * @param name app的页面   message:消息，share:分享，realName:实名认证，setPayPwd:设置交易密码，changePayPwd:修改交易密码，invoice:发票管理
    * @param redirect
    */
-  redirectPage: function (name, redirect) {
+  redirectPage: function (name: string, redirect: string) {
     location.href = "jsCallBack://?type=redirect&name=" + name + "&redirect=" + redirect;
   },
   /**
    * @function 调用App保存图片到相册
    * @param imgUrl  图片路径
    */
-  saveImg: function (img) {
+  saveImg: function (img: string) {
     location.href = "jsCallBack://?type=saveImg&img=" + img;
   },
   /**
@@ -88,7 +88,7 @@ export default {
    * @param data 支付需要的数据
    * @param url 支付成功后重定向地址
    */
-  pay: function (type, data, url) {
+  pay: function (type: string, data: string, url: string) {
     location.href = "jsCallBack://?type=" + type + "&data=" + data + "&url=" + url;
   },
   /**
@@ -96,14 +96,14 @@ export default {
    * @param key
    * @param value
    */
-  callBackNative: function (key, value) {
+  callBackNative: function (key: string, value: string) {
     location.href = "jsCallBack://?type=callback&keyName=" + key + "&keyValue=" + value;
   },
   /**
    * @function 返回上一页并刷新为url
    * @param url
    */
-  callBackRedirect: function (url) {
+  callBackRedirect: function (url: string) {
     location.href = "jsCallBack://?type=backAndPush&url=" + url;
   },
   /**

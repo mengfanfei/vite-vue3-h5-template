@@ -1,5 +1,6 @@
+// @ts-ignore
 import wx from 'weixin-js-sdk'
-import { getwxConfigInfo } from '../api'
+import {getwxConfigInfo} from '../api'
 
 /**
  * 设置微信配置
@@ -21,17 +22,17 @@ export function wxConfig() {
       jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData'],
       openTagList: ['wx-open-launch-app']
     })
-    wx.ready(_ => {
+    wx.ready(() => {
       console.log('ready')
     })
-    wx.error(err => {
+    wx.error((err: any) => {
       console.log(err)
     })
   })
 }
 
 // 分享
-export function wxShare(title, desc, link, imgUrl) {
+export function wxShare(title: string, desc: string, link: string, imgUrl: string) {
   wx.ready(function() {
     wx.updateAppMessageShareData({
       title, // 分享标题

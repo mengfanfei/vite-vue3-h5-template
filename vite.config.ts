@@ -1,12 +1,13 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
 import autoprefixer from 'autoprefixer'
+// @ts-ignore
 import pxtovw from 'postcss-px-to-viewport'
 import styleImport from 'vite-plugin-style-import'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import viteSvgIcons from 'vite-plugin-svg-icons'
-import { resolve } from 'path'
+import {resolve} from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -50,9 +51,7 @@ export default defineConfig({
       '/members': {
         target: 'https://hwdpfw.zhongyijiutai.com',
         changeOrigin: true,
-        pathRewrite: {
-          '^/members': '/members'
-        }
+        rewrite: path => path.replace(/^\/members/, '/members')
       }
     }
   }

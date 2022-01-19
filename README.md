@@ -6,6 +6,7 @@
 - 使用vw适配移动端
 - 自定义全局样式（在assets/styles/index.css）
 - 使用scss预编译
+- 使用typescript
 
 ## 全局样式提示
 
@@ -34,7 +35,7 @@ export default defineConfig({
   ],
 })
 ```
-- 在 src/main.js 内引入注册脚本
+- 在 src/main.ts 内引入注册脚本
 ```javascript
 import 'virtual:svg-icons-register';
 import './assets/iconfont/iconfont.css' // iconfont 内容

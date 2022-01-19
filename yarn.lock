@@ -2149,6 +2149,11 @@ tslib@^2.0.3:
   resolved "https://registry.nlark.com/tslib/download/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha1-6KM1rdXOrlGqJh0ypJAVjvBC7wE=
 
+typescript@^4.5.4:
+  version "4.5.4"
+  resolved "https://registry.npmmirror.com/typescript/download/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
+  integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
+
 union-value@^1.0.0:
   version "1.0.1"
   resolved "https://registry.nlark.com/union-value/download/union-value-1.0.1.tgz#0b6fe7b835aecda61c6ea4d4f02c14221e109847"
