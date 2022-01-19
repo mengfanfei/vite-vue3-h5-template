@@ -22,6 +22,7 @@
     "postcss-px-to-viewport": "^1.1.1",
     "sass": "^1.45.1",
     "vite": "^2.7.2",
-    "vite-plugin-style-import": "^1.4.1"
+    "vite-plugin-style-import": "^1.4.1",
+    "vite-plugin-svg-icons": "^1.1.0"
   }
 }
