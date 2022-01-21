@@ -2,13 +2,15 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
+    "useDefineForClassFields": true,
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
     "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["vite/client"],
-    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
